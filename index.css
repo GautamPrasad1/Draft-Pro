@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--font-sans);
+  }
+}
+
+.drafting-grid {
+  background-color: #edf1f6;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
